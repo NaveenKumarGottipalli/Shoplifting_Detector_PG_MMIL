@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Mean and standard deviation across random seeds on the independent held-out test partition. Checkpoints and decision thresholds were selected using validation data only.}
+\label{tab:independent_test_performance}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & ROC-AUC (mean across seeds) & ROC-AUC (std across seeds) & Average Precision (mean across seeds) & Average Precision (std across seeds) & F1 (mean across seeds) & F1 (std across seeds) & FAR (%) (mean across seeds) & FAR (%) (std across seeds) \\
+\midrule
+Sultani-inspired MIL & 0.7507 & 0.0057 & 0.5771 & 0.0070 & 0.5099 & 0.0392 & 14.6758 & 6.2094 \\
+RTFM-inspired TCN & 0.9245 & 0.0050 & 0.8227 & 0.0083 & 0.7070 & 0.0123 & 3.1854 & 0.9852 \\
+Pose-only transformer & 0.7183 & 0.0050 & 0.5001 & 0.0138 & 0.4478 & 0.0184 & 12.0592 & 2.2725 \\
+VadCLIP-inspired prompt MIL & 0.9411 & 0.0118 & 0.8806 & 0.0180 & 0.7653 & 0.0147 & 5.5745 & 2.9426 \\
+PG-MMIL w/o GRL (Ablation) & 0.9437 & 0.0058 & 0.8867 & 0.0074 & 0.7573 & 0.0347 & 1.9340 & 1.3793 \\
+Proposed PG-MMIL & 0.9383 & 0.0104 & 0.8877 & 0.0061 & 0.7967 & 0.0014 & 2.9579 & 1.0971 \\
+\bottomrule
+\end{tabular}
+\end{table}
